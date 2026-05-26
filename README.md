@@ -7,13 +7,13 @@ See the wiki user guide for more information: https://wiki.st.com/stm32mpu/wiki/
 # Getting Started
 To build and image, initialize and sync the repositores using the repo tool
 
-```repo init -u https://github.com/cargt/stm32mp_manifest.git -b scarthgap -m cargt-stm32mp2.xml```
+```repo init -u https://github.com/jkhax0r/stm32mp_manifest.git -b scarthgap -m ov585.xml```
 
 ```repo sync```
 
 Initialize the environment and chose the MACHINE and DISTRO using the scripts provided.
 
-``` source ./layers/meta-st/meta-st-cargt/scripts/envsetup.sh```
+``` source ./layers/meta-st/meta-st-ov585/scripts/envsetup.sh```
 
 You should end up with output similar to this:
 
