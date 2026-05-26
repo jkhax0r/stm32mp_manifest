@@ -19,28 +19,26 @@ You should end up with output similar to this:
 
 ```
 ===========================================================================
-
 Configuration files have been created for the following configuration:
 
-    DISTRO            :  cargt-openstlinux-weston
+    DISTRO            :  ov585-openstlinux-weston
     DISTRO_CODENAME   :  scarthgap
-    MACHINE           :  stm32mp25-cargt-00395-00365v3
+    MACHINE           :  stm32mp25-cargt-ov585
     BB_NUMBER_THREADS :  <no-custom-config-set>
     PARALLEL_MAKE     :  <no-custom-config-set>
 
-    BUILDDIR          :  build-cargtopenstlinuxweston-stm32mp25-cargt-00395-00365v3
+    BUILDDIR          :  build-ov585openstlinuxweston-stm32mp25-cargt-ov585
     DOWNLOAD_DIR      :  <disable>
     SSTATE_DIR        :  <disable>
 
     SOURCE_MIRROR_URL :  <no-custom-config-set>
     SSTATE_MIRRORS    :  <disable>
 
-    WITH_EULA_ACCEPTED:  YES
+    WITH_EULA_ACCEPTED:  <no-custom-config-set>
 
 ===========================================================================
-
 ```
 
 You can now start a build with a command like this:
 
-```bitbake cargt-image-dev```
+```bitbake ov585-cargt-image-dev```
