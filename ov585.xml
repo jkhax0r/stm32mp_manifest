@@ -3,7 +3,7 @@
   <remote name="github"      fetch="https://github.com"/>
   <remote name="oe"          fetch="http://git.openembedded.org"/>
   <remote name="OpenSTLinux" fetch="https://github.com/STMicroelectronics"/>
-  <remote name="ov585"       fetch="https://github.com/jkhax0r"/>
+  <remote name="ov585"       fetch="ssh://git@github.com/jkhax0r"/>
 
 
   <default remote="OpenSTLinux"/>
