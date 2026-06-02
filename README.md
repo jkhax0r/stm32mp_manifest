@@ -4,6 +4,12 @@ This project is the repo manifest of OpenSTLinux release.
 
 See the wiki user guide for more information: https://wiki.st.com/stm32mpu/wiki/STM32MPU_Distribution_Package
 
+# OV585 repos
+
+OV585 distro layer: https://github.com/jkhax0r/meta-st-ov585
+
+OV585 STM32MP addons layer: https://github.com/jkhax0r/meta-ov585-stm32mp-addons
+
 # Getting Started
 To build and image, initialize and sync the repositores using the repo tool
 
