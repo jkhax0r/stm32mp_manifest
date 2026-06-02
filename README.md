@@ -13,6 +13,8 @@ OV585 STM32MP addons layer: https://github.com/jkhax0r/meta-ov585-stm32mp-addons
 # Getting Started
 To build and image, initialize and sync the repositores using the repo tool
 
+This setup is tested and used on Ubuntu 24.04, and should also work on Ubuntu 22.04.
+
 ```repo init -u https://github.com/jkhax0r/stm32mp_manifest.git -b scarthgap -m ov585.xml```
 
 ```repo sync```
