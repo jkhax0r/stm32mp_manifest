@@ -48,3 +48,26 @@ Configuration files have been created for the following configuration:
 You can now start a build with a command like this:
 
 ```bitbake ov585-cargt-image-dev```
+
+# Program the CARGT dev board
+
+Set the boot mode to Serial Downloader for programming. After programming, set it back to eMMC boot.
+
+| BOOT_MODE[1:0] | Boot Configuration | Notes |
+| --- | --- | --- |
+| 00 | Boot from Internal Fuses | |
+| 01 | Serial Downloader | Production programming |
+| 10 | USDHC1 8-bit eMMC 5.1 | Recommended setting |
+| 11 | USDCH2 4-bit SD | Default setting |
+
+Only `01` and `10` are normally relevant for OV585 programming and eMMC boot.
+
+For DFU/programming, use the USB port closest to the Ethernet jack.
+
+Flash the eMMC image from WSL/Linux using the Windows STM32CubeProgrammer CLI:
+
+```./layers/meta-st/meta-st-ov585/scripts/flash-ov585.sh```
+
+The script expects the Windows programmer binary at:
+
+```/mnt/c/Program Files/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin/STM32_Programmer_CLI.exe```
